@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.1",
-    "jQuery": "^1.7.4",
+    "jquery": "^3.6.1",
     "popper.js": "^1.16.1"
   }
 }

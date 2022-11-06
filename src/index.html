@@ -5,13 +5,28 @@
 <body>
   <div class="container">
     <h1>Get Weather Conditions From Anywhere!</h1>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
-    <button class="btn btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <label for="location">Enter a city and state location:</label>
+    <input id="location" type="text" placeholder=" enter a city,state">
+    <button class="btn btn-success" id="weatherLocation">Get city and state weather info</button>
     <div class="showErrors"></div>
     <div class="showHumidity"></div>
     <div class="showTemp"></div>
     <div class="showTempCelsius"></div>
+    <div class="showTempFahrenheit"></div>
   </div>
+
+  <!-- For Countries -->
+
+  <div class="container two">
+    <label for="country">Enter a Country's location:</label>
+    <input id="country" type="text" placeholder="enter only one Country" >
+    <button class="btn btn-success" id="countryWeather">Get Country's weather info</button>
+    <div class="showErrorsCountry"></div>
+    <div class="showHumidityCountry"></div>
+    <div class="showTempCountry"></div>
+    <div class="showTempCelsiusCountry"></div>
+    <div class="showTempFahrenheitCountry"></div>
+  </div>
+
 </body>
 </html>
