@@ -14,6 +14,8 @@
 * jQuery
 * JSON
 * Openweathermap.org API
+* Promise
+
 
 ## Description
 _In this application, you experience how powerful the term API is and you also get to explore one of the best sites to get weather condition which is: (https://openweathermap.org/api_keys). I know you would definitely want to know what APi key I used, below which is the setup/Installation is where you can get all those_
@@ -34,6 +36,8 @@ _In this application, you experience how powerful the term API is and you also g
 * _No detected bugs_
 * _The one bug you will definitely encounter is if you fail to follow any of the Setup/Installation Information I gave you_
 * _Note: as at the launch of this Application there are no bugs but this is not the finished product as I will be adding more features later on. If anyone comes in contact with a bug, be sure to hit me up on social media or email me @emzzyoluwole@gmail.com. WATCH OUT FOR VERSION 1.1 WHICH IS COMING SOON. Also in version 1.1, I would be making use of some things called promise, .then() and fetch, and even a try....catch block just to make application more fun and readable for users_
+* _This note was added for version 1.0.0, this is the version 1.1.0 where I made my Api call in a new way called Promise_
+* _P.S: two javaScript logic files where used here_
 
 ## WebLink
 https://emzzy241.github.io/Weather-Api/
@@ -44,7 +48,8 @@ Licensed under the GNU General Public License
 ## Contact Info
 * _You can contact me via email @ emzzyoluwole@gmail.com_
 * _I'm on Instagram @Emmanuel.9944_
-* _I'm on Twitter @Dynasty or @Iam_dynasty
+* _I'm on Twitter @Dynasty or @Iam_dynasty_
+* _Github Username: Emzzy241_
 
 
 
@@ -54,11 +59,3 @@ Licensed under the GNU General Public License
 
 
 
-
-<!-- when writing me Emmanuel make sure you read this:
-
-EMMANUEL MAKE SURE YOU MAKE A GREAT README FILE 
-
-You should always be careful storing any sensitive information in your application. Even if it's just the key for an API that's free for public use, you should still be in the habit of keeping this information private.
-
-Generally, we don't need to worry too much about security with the public APIs that we'll be using, but it's important to be aware of the security issues around API keys. Make sure you store all keys in a local .env file that's never pushed to Github. dotenv-webpack should also be a regular tool in your toolbox whenever you're using sensitive variables in webpack projects. And once again, when you do push projects to GitHub that require API keys, make sure to include instructions in the README so that other users can clone your project and use their own API keys to see what you've built. That means including all steps for getting a key - from the link to sign up for an account to any steps to getting an API key to using a personal key with a .env file. Adding both a .env file with properly stored API variables as well as instructions for adding an API key is a requirement for this section's independent project. -->
