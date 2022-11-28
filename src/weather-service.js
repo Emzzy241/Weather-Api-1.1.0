@@ -1,5 +1,5 @@
 // business Logic file
-x
+
 export class WeatherService {
     static getWeather(city){
         return new Promise(function(resolve, reject){
