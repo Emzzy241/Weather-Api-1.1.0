@@ -91,12 +91,10 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-// importing the WeatherService class that we need in the UI logic file
+// importing the WeatherService and CountryWeatherService class that we need in the UI logic file
 
-import { WeatherService } from "./weather-service.js";
+import { WeatherService,CountryWeatherService } from "./weather-service.js";
 
-// importing the CountryWeatherService class that we need in the UI logic file
-import { CountryWeatherService } from './weather-service.js';
 
 
 // separation of logic code 
