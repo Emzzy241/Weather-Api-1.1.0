@@ -101,16 +101,30 @@ import { CountryWeatherService } from './weather-service.js';
 
 // separation of logic code 
 
-// a function for clearing out the form fields and other things from the DOM(Document Object Module)
-
-function clearFields() {
-    $("#location").val("");
-    $(".showErrors").text("");
-    $(".showHumidity").text("");
-    $(".showTemp").text("");
-}
 
 $(document).ready(() => {
+    
+    // a function for clearing out the form fields and other things from the DOM(Document Object Module) for city,state
+    function clearFields() {
+        $("#location").val("");
+        $(".showErrors").text("");
+        $(".showHumidity").text("");
+        $(".showTemp").text("");
+        $(".showTempCelsius").text("");
+        $(".showTempFahrenheit").text("");
+    }
+    
+    // a function for clearing out the form fields and other things from the DOM(Document Object Module) for country
+    function clearCountryFields() {
+        $("#country").val("");
+        $(".showErrorsCountry").text("");
+        $(".showHumidityCountry").text("");
+        $(".showTempCountry").text("");
+        $(".showTempCelsiusCountry").text("");
+        $(".showTempFahrenheitCountry").text("");
+    }
+
+    
     $('#weatherLocation').click(() => {
         let city = $('#location').val();
         // running the clearFields() function to clear out all our fields(both the form fields and the other fields for revealingthe answers)
@@ -142,7 +156,7 @@ $(document).ready(() => {
     $("#countryWeather").click(function () {
         let country = $("#country").val();
 
-        clearFields();
+        clearCountryFields();
 
         // making use of another promise for Countries
 
