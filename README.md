@@ -35,9 +35,8 @@ _In this application, you experience how powerful the term API is and you also g
 ## Detected Bugs/ Issues
 * _No detected bugs_
 * _The one bug you will definitely encounter is if you fail to follow any of the Setup/Installation Information I gave you_
-* _Note: as at the launch of this Application there are no bugs but this is not the finished product as I will be adding more features later on. If anyone comes in contact with a bug, be sure to hit me up on social media or email me @emzzyoluwole@gmail.com. WATCH OUT FOR VERSION 1.1 WHICH IS COMING SOON. Also in version 1.1, I would be making use of some things called promise, .then() and fetch, and even a try....catch block just to make application more fun and readable for users_
-* _This note was added for version 1.0.0, this is the version 1.1.0 where I made my Api call in a new way called Promise_
-* _P.S: two javaScript logic files where used here_
+* _Note: as at the launch of this Application there are no bugs but this is not the finished product as I will be adding more features later on. If anyone comes in contact with a bug, be sure to hit me up on social media or email me @emzzyoluwole@gmail.com. WATCH OUT FOR VERSION 1.2.0 WHICH IS COMING SOON. Also in version 1.2.0, I would be making use of things like fetch, and even a try....catch block just to make application more fun and readable for users_
+* _P.S: two javaScript logic files where used here(in this version: 1.2.0)_
 
 ## WebLink
 https://emzzy241.github.io/Weather-Api/
