@@ -86,14 +86,17 @@ $(document).ready(function () {
 // little Fun fact about ES6( it is also called ES2015) as it was made in 2015, it is not called ES6 because its made in 2006 :)
 // the one disadvantage with promises though is that they eat up much lines of code
 
-// the business Logic file
+// the UserInterface Logic file
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-// importing only the WeatherService class that we need in the UI logic file
+// importing the WeatherService class that we need in the UI logic file
 
-import WeatherService from "./weather-service.js";
+import { WeatherService } from "./weather-service.js";
+
+// importing the CountryWeatherService class that we need in the UI logic file
+import { CountryWeatherService } from './weather-service.js';
 
 
 // separation of logic code 
@@ -101,7 +104,7 @@ import WeatherService from "./weather-service.js";
 // a function for clearing out the form fields and other things from the DOM(Document Object Module)
 
 function clearFields() {
-    $("#weatherLocation").val("");
+    $("#location").val("");
     $(".showErrors").text("");
     $(".showHumidity").text("");
     $(".showTemp").text("");
@@ -129,12 +132,41 @@ $(document).ready(() => {
             $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp}k.`);
             $('.showTempCelsius').text(`The temperature in degree Celsius is ${body.main.temp - 273}c.`);
             $(".showTempFahrenheit").text(`The temperature in Fahrenheit is ${myTempValue}f`);
+            // $('.showErrors').text("");
         }, function (error) {
             $('.showErrors').text(`There was an error processing your request: ${error}`);
 
-        })
+        });
     });
-})
+
+    $("#countryWeather").click(function () {
+        let country = $("#country").val();
+
+        clearFields();
+
+        // making use of another promise for Countries
+
+         let countryPromise = CountryWeatherService.getCountryWeather(country);
+
+         countryPromise.then((myCountryResponse) => {
+            const countryBody = JSON.parse(myCountryResponse);
+
+            let myCountryTempValue = 1.8 * (countryBody.main.temp - 273) + 32;
+            // let myTempValue = Math.trunc(1.8 * (response.main.temp - 273) + 32); -- I didn't trunc or floor the values because I want my value to be concised for my users
+            console.log(myCountryTempValue);
+
+            $('.showHumidityCountry').text(`The humidity in ${country} is ${countryBody.main.humidity}%`);
+            $('.showTempCountry').text(`The temperature in Kelvins is ${countryBody.main.temp}k.`);
+            $('.showTempCelsiusCountry').text(`The temperature in degree Celsius is ${countryBody.main.temp - 273}c.`);
+            $(".showTempFahrenheitCountry").text(`The temperature in Fahrenheit is ${myCountryTempValue}f`);
+        }, function (countryEror) {
+            $('.showErrorsCountry').text(`There was an error processing your request: ${countryEror}`);
+
+
+
+        });
+    });
+});
 
 
 

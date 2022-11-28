@@ -14,6 +14,9 @@
 * jQuery
 * JSON
 * Openweathermap.org API
+* Promise
+* Async and Await functions
+* Fetch
 
 ## Description
 _In this application, you experience how powerful the term API is and you also get to explore one of the best sites to get weather condition which is: (https://openweathermap.org/api_keys). I know you would definitely want to know what APi key I used, below which is the setup/Installation is where you can get all those_
@@ -34,6 +37,8 @@ _In this application, you experience how powerful the term API is and you also g
 * _No detected bugs_
 * _The one bug you will definitely encounter is if you fail to follow any of the Setup/Installation Information I gave you_
 * _Note: as at the launch of this Application there are no bugs but this is not the finished product as I will be adding more features later on. If anyone comes in contact with a bug, be sure to hit me up on social media or email me @emzzyoluwole@gmail.com. WATCH OUT FOR VERSION 1.1 WHICH IS COMING SOON. Also in version 1.1, I would be making use of some things called promise, .then() and fetch, and even a try....catch block just to make application more fun and readable for users_
+* _This note was added for version 1.0.0, this is the version 1.1.0 where the technologies promise, fetch, async and await functions were all used._
+* _P.S: two javaScript logic files where used here_
 
 ## WebLink
 https://emzzy241.github.io/Weather-Api/
