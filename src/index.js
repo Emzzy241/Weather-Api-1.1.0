@@ -32,12 +32,17 @@ import './css/styles.css';
 
 import { WeatherService,CountryWeatherService } from "./weather-service.js";
 
-
+// importing the APp Logo
+import jsBadgeImage from "./assets/images/js-Badge.svg";
 
 // separation of logic code 
 
 
 $(document).ready(() => {
+
+    // working with the image impoerted
+    let appImg = $("#myAPPIMg");
+    appImg.attr("href", jsBadgeImage);
     
     // a function for clearing out the form fields and other things from the DOM(Document Object Module) for city,state
     function clearFields() {
