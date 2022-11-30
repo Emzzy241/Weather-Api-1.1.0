@@ -1,6 +1,8 @@
+// UserInterface Logic file
 
-*/
-// Updating code, which is written with callbacks to include promises, but first let's analogize what a promise is:
+
+
+// Updating code, which was written with callbacks in version 1.0.0 of application to include promises, but first let's analogize what a promise is:
 // Let's use one more analogy to explain the process. Imagine you're waiting to renew your driver's license at the DMV. When you go in, you get a piece of paper with a number on it. You wait until your number is called and then you go to the counter to renew your license.
 
 // That piece of paper is similar to a promise. It represents an appointment you'll have in the future, but that appointment doesn't exist yet. While you're waiting for your number to be called, the promise is pending. The promise will either be fulfilled (driver's license renewed...yay!) or rejected (better study for the driving test more...)
